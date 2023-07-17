@@ -9,7 +9,7 @@ socialRouter.post('/add',async(req,res)=>{
         await post.save()
         res.status(200).json({msg:'post added successfully'})
     } catch (error) {
-        res.status(400).json({msg:error})
+        res.status(400).json({msg:error}) 
     }
 })
 

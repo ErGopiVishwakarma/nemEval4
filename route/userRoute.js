@@ -7,7 +7,7 @@ const bc = require('bcryptjs')
 userRouter.post('/register',async(req,res)=>{
    const {name,email,gender,password} = req.body
    try {
-    const user = await UserModel.find({email})
+    const user = await UserModel.find({email}) 
     if(user.length>0){
         res.status(200).json({msg:'user already registered please login!'})
     }else{

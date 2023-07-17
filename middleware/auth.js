@@ -6,7 +6,7 @@ const auth = (req,res,next)=>{
         try {
             jwt.verify(token,'social',(err,decode)=>{
                 if(err){
-                    res.send('something went wrong!')
+                    res.send('something went wrong!') 
                 }else{
                     req.id = decode.userId
                     next()

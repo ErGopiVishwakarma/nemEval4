@@ -1,9 +1,10 @@
 const  express = require('express')
-const connection = require('./config/db')
-const userRouter = require('./route/userRoute')
+
+const cors = require('cors')
 const socialRouter = require('./route/socialRoute')
 const auth = require('./middleware/auth')
-const cors = require('cors')
+const userRouter = require('./route/userRoute')
+const connection = require('./config/db')
 const app = express()
 const port = 8080
 app.use(express.json())

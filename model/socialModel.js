@@ -4,7 +4,7 @@ const socialSchema = mongoose.Schema({
 title:String,
 body:String,
 device:String,
-postedBy:String
+postedBy:String 
 })
 
 const SocialModel = mongoose.model('social',socialSchema)
